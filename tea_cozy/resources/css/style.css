@@ -1,19 +1,125 @@
-* {
-  font-family: Helvetica, Arial, sans-serif;
+/** general **/
+html {
+  font-size: 22px;
 }
 
-
-h1 {
-  color: SeaGreen;
+li, span, ul, ol, a, h1, h2, h3, h4, h5, h6, p {
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
 }
 
-
-p,
-li {
-  font-size: 18px;
+h2 {
+  font=size: 1.5rem;
 }
 
-
-a {
-  text-decoration: none;
+h3 {
+  font=size: 1.25rem;
 }
+
+h4, li, span, ul, ol, a, p {
+  font=size: 1rem;
+}
+
+h5 {
+  font=size: 0.75rem;
+}
+
+/** header **/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid seashell;
+  background-color: black;
+
+  /**positioning**/
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  margin-left: 10px;
+  height: 50px;
+}
+
+header a {
+  margin-right: 20px;
+}
+
+/**main**/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+
+  /**positioning**/
+  position: relative;
+  top: 69px;
+}
+
+/** mission **/
+.mission {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url(../img-mission-background.jpg);
+  height: 700px;
+}
+
+.blackBackground {
+  background-color: black;
+}
+
+/** month **/
+.monthGroup {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.monthTitle {
+  text-align: center;
+}
+
+.monthBoxes {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.month img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.month {
+  text-align: center;
+}
+
+.marginL25 {
+  margin-left: 25px;
+}
+
+.marginR25 {
+  margin-right: 25px;
+}
+
+/** locations **/
+
+
+/** contact **/
+
+
+/** footer **/
