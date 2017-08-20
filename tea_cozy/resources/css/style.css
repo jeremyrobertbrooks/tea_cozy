@@ -25,6 +25,11 @@ h5 {
   font=size: 0.75rem;
 }
 
+.anchor {
+  padding-top: 62px;
+  margin-top: -62px;
+}
+
 /** header **/
 header {
   width: 100%;
@@ -61,7 +66,7 @@ header a {
 
   /**positioning**/
   position: relative;
-  top: 63px;
+  top: 62px;
 }
 
 /** mission **/
