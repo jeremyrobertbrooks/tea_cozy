@@ -28,6 +28,7 @@ h5 {
 /** header **/
 header {
   width: 100%;
+  height: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +61,7 @@ header a {
 
   /**positioning**/
   position: relative;
-  top: 69px;
+  top: 63px;
 }
 
 /** mission **/
@@ -101,25 +102,72 @@ header a {
 .month img {
   width: 300px;
   height: 200px;
-  margin-bottom: 10px;
 }
 
 .month {
   text-align: center;
+  margin: 0 16px;
 }
 
-.marginL25 {
-  margin-left: 25px;
-}
-
-.marginR25 {
-  margin-right: 25px;
+.month h4 {
+  margin: 10px 0 20px 0;
 }
 
 /** locations **/
+.locationGroup {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img-locations-background.jpg);
+}
 
+.locationTitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.locationTitle h2 {
+  margin: 0;
+}
+
+.locationBoxes {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.location h3, p {
+  margin: 0;
+}
+
+.locationActive {
+  opacity: 1;
+  border: 2px solid red;
+}
 
 /** contact **/
-
+.contact {
+  height: 200px;
+  text-align: center;
+}
 
 /** footer **/
+footer {
+  width: 100%;
+}
+
+footer h5 {
+  margin-left: 20px;
+  text-align: left;
+}
