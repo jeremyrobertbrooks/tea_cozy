@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 10;
 }
 
 header .content {
@@ -62,7 +63,7 @@ nav li {
 }
 
 nav a {
-  vertical-align: bottom;
+  vertical-align: center;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
@@ -117,9 +118,11 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
 }
 
 #sign-up-cta {
+  margin: 10.625rem 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -212,27 +215,42 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  align-items: center;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
+  width: 40%;
+  height: 90%;
+  max-height: 635px;
   flex: 1;
   padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 1.1875rem;
   background-color: white;
 }
 
 .feature .image-container {
   width: 90%;
-  height: 65%;
+  max-height: 39.6875rem;
   margin: 0 auto;
 }
 
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.feature .content {
+  height: 11.6875rem;
+}
+
 .feature h2 {
+  margin-top: 0.5rem;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
+  line-height: 1.2;
   color: #4a4a4a;
 }
 
