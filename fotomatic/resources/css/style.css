@@ -28,7 +28,7 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -78,8 +78,29 @@ header .mobile {
   display: none;
 }
 
+header .tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .tablet {
+    display: block;
+  }
+
+  header .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
+    display: none;
+  }
+
+  header .tablet {
     display: none;
   }
 
@@ -89,7 +110,7 @@ header .mobile {
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0.725rem 0;
   }
 
   header .mobile ul {
@@ -101,6 +122,10 @@ header .mobile {
 
   header .mobile li {
     padding: 0;
+  }
+
+  header .mobile img {
+    vertical-align: middle;
   }
 
   header .mobile .button {
@@ -119,6 +144,7 @@ header .mobile {
   align-items: flex-start;
   height: 43.5rem;
   background-image: url(../images/banner-landingpage.jpg);
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -164,11 +190,12 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-position: right;
   }
 
   #sign-up-cta {
@@ -196,7 +223,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 760px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -261,16 +288,15 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1024px) {
   .feature h2 {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: left;
   }
 
   .feature h3 {
-    font-size: .875rem;
-    line-height: 1.4;
+    text-align: left;
+    font-size: 0.925rem;
   }
 }
 
@@ -281,8 +307,26 @@ header .mobile {
   }
 
   .feature {
+    width: 100%;
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 0 1.875rem 0;
+  }
+
+  .feature .content {
+    height: auto;
+  }
+
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    text-align: center;
   }
 }
 
@@ -372,20 +416,44 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
-  #quotes-section content {
-    padding: 1.875rem .625rem;
+/**tablet sizing**/
+@media only screen and (max-width: 1024px) {
+  #quotes-section .content {
+    padding: 1.875rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  #quotes-section quote {
+
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    width: 75%;
+    text-align: left;
   }
 
   #quotes-section quote-citation {
-    display: block;
     padding-top: 1rem;
     margin: auto;
+    width: 25%;
+  }
+}
+
+/**mobile sizing**/
+@media only screen and (max-width: 760px) {
+  #quotes-section .content {
+    flex-direction: column;
+  }
+
+  #quotes-section .quote {
+    text-align: center;
+    margin: 0 0 1.25rem 0;
+    padding: 0;
+  }
+
+  #quotes-section quote-citation {
+    text-align: center;
   }
 }
 
